@@ -23,7 +23,7 @@ jobs:
         id: replaced
         with:
           input: ${{ github.ref }}
-          regex: 'refs\\/heads\\/'
+          regex: 'refs\/heads\/'
           replace: ''
       - run: |
           echo ${{ steps.replaced.outputs.result }}
