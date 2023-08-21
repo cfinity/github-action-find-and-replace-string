@@ -1,0 +1,19 @@
+name: 'Find and Replace String'
+description: 'Replace occurrences of given symbols in a string'
+author: 'Vladyslav Kuksa'
+inputs:
+  input:
+    description: 'The string you want to run this action on'
+    required: true
+  regex:
+    description: 'A regex, that will be matched against to find a string to be replaced'
+    required: true
+  replace:
+    description: 'The string to be replaced with'
+    required: true
+outputs:
+  result:
+    description: 'The new value after find-and-replace has been run'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
