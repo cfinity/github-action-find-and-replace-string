@@ -26,4 +26,4 @@ jobs:
           regex: 'ref\\/heads\\/'
           replace: ''
       - run: |
-          echo ${{ steps.parsed1.outputs.value }}
+          echo ${{ steps.replaced.outputs.result }}
