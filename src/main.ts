@@ -32,7 +32,7 @@ function run(): void {
 
     const result = replaceOccurrences(inputString, regexPattern, replacement)
 
-    core.setOutput('result', result)
+    core.setOutput('value', result)
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
   }
