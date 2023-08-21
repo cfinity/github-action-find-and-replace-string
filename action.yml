@@ -1,6 +1,6 @@
 name: 'Find and Replace String'
 description: 'Replace occurrences of given symbols in a string'
-author: 'Vladyslav Kuksa'
+author: 'vkuksa'
 inputs:
   input:
     description: 'The string you want to run this action on'
@@ -16,4 +16,4 @@ outputs:
     description: 'The new value after find-and-replace has been run'
 runs:
   using: 'node16'
-  main: 'dist/index.js'
+  main:  'dist/index.js'

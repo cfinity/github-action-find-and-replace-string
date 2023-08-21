@@ -24,7 +24,7 @@ The new value containing the found-and-replaced string.
 ### Example usage
 
 ```yaml
-uses: cfinity/github-action-find-and-replace-string@1
+uses: cfinity/github-action-find-and-replace-string@v1.0
 with:
     input: ${{ github.ref }} # this translates to ref/heads/main on the main branch, but can be any arbitrary string 
     regex: '\\;'              # we want to find all occurence of ';' in string
