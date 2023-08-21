@@ -20,7 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./
+        id: replaced
         with:
           input: ${{ github.ref }}
           regex: 'ref\\/heads\\/'
           replace: ''
+      - run: |
+          echo ${{ steps.parsed1.outputs.value }}
