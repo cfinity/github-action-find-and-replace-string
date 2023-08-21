@@ -12,7 +12,7 @@ inputs:
     description: 'The string to be replaced with'
     required: true
 outputs:
-  result:
+  value:
     description: 'The new value after find-and-replace has been run'
 runs:
   using: 'node16'
