@@ -30,3 +30,12 @@ with:
     regex: '\\;'              # we want to find all occurence of ';' in string
     replace: ''               # and replace it with a blank string (ie. removing it)
 ```
+
+# Updating
+
+Refer to: https://github.com/actions/toolkit/blob/master/docs/action-versioning.md
+
+```
+git tag -fa v1 -m "Update v1 tag"
+git push origin v1 --force
+```
