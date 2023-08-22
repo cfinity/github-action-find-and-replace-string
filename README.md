@@ -27,8 +27,11 @@ The new value containing the found-and-replaced string.
 uses: cfinity/github-action-find-and-replace-string@v1.0
 with:
     input: ${{ github.ref }} # this translates to ref/heads/main on the main branch, but can be any arbitrary string 
-    regex: '\\;'              # we want to find all occurence of ';' in string
-    replace: ''               # and replace it with a blank string (ie. removing it)
+    replace: |               # we want to find all occurence of ';' or '$' in input string
+        \;|\$                  
+    with: ''                 # and replace it with a blank string (ie. removing it)
+
+run: echo ${{ steps.replaced.outputs.value }} 
 ```
 
 # Updating
