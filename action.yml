@@ -5,10 +5,10 @@ inputs:
   input:
     description: 'The string you want to run this action on'
     required: true
-  regex:
+  replace:
     description: 'A regex, that will be matched against to find a string to be replaced'
     required: true
-  replace:
+  with:
     description: 'The string to be replaced with'
     required: true
 outputs:

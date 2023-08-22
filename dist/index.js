@@ -54,10 +54,10 @@ exports.replaceOccurrences = replaceOccurrences;
 function run() {
     try {
         const inputString = core.getInput('input');
-        const regexPattern = core.getInput('regex');
-        const replacement = core.getInput('replace');
+        const regexPattern = core.getInput('replace');
+        const replacement = core.getInput('with');
         const result = replaceOccurrences(inputString, regexPattern, replacement);
-        core.setOutput('result', result);
+        core.setOutput('value', result);
     }
     catch (error) {
         if (error instanceof Error)
