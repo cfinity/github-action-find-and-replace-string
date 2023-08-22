@@ -37,9 +37,7 @@ function replaceOccurrences(inputString, regexPattern, replacement) {
         // Create a RegExp object from the given pattern
         const regex = new RegExp(regexPattern, 'g');
         // Replace all occurrences that match the regex
-        const replaced = inputString.replace(regex, replacement);
-        // Replace multiple consecutive "-" with a single "-"
-        const result = replaced.replace(/-+/g, '-');
+        const result = inputString.replace(regex, replacement);
         return result;
     }
     catch (error) {

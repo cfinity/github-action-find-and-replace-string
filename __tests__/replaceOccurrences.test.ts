@@ -18,9 +18,9 @@ describe('replaceOccurrences', () => {
     ]
 
     const expected = [
-      'DEV-1346_create-page-for-refund-form',
+      'DEV-1346_create-page-for-refund--form',
       'DEV-1238_frontend-articles-api-integration',
-      'DEV-26_create-funnel-v5-flow'
+      'DEV-26_create-funnel-v5--flow'
     ]
 
     branches.forEach((branch, index) => {
@@ -48,9 +48,9 @@ describe('replaceOccurrences', () => {
     const replacePattern = '-'
 
     const expected = [
-      'DEV-1346_create-page-for-refund-form-',
+      'DEV-1346_create-page-for-refund--form-',
       'DEV-1238_frontend-articles-api-integration-',
-      'DEV-26_create-funnel-v5-flow-'
+      'DEV-26_create-funnel-v5--flow-'
     ]
 
     branches.forEach((branch, index) => {
